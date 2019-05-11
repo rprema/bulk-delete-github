@@ -1,0 +1,20 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary {
+  fill: #a5b3bb;
+}
+
+.secondary {
+  fill: #0d2b3e;
+}
