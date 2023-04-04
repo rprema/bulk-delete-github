@@ -8,9 +8,11 @@ async function userAuth(username, access_token) {
     url: `https://api.github.com/user/repos`,
     method: "get",
     params: {
-      access_token,
       affiliation: "owner"
-    }
+    },
+    headers: {
+      Authorization: 'token ' + access_token
+    },
   };
 
   await axios(request)

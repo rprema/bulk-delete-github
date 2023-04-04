@@ -65,6 +65,9 @@
               (Token with
               <span class="font-bold">repo, delete_repo</span> scope required.)
             </p>
+            <p class="text-grey-darker text-xs mt-1">
+              <a href="https://github.com/settings/tokens">Go to Settings</a>
+            </p>
           </div>
         </div>
       </form>

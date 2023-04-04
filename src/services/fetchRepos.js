@@ -12,10 +12,12 @@ async function fetchRepos(username, access_token) {
       url: `https://api.github.com/user/repos`,
       method: "get",
       params: {
-        access_token,
         page,
         affiliation: "owner"
-      }
+      },
+      headers: {
+        Authorization: 'token ' + access_token
+      },
     };
 
     await axios(request)

@@ -6,9 +6,9 @@ async function deleteRepos(repos, username, access_token) {
     await axios({
       method: "delete",
       url: URL,
-      params: {
-        access_token
-      }
+      headers: {
+        Authorization: 'token ' + access_token
+      },
     })
       .then(response => {
         console.log(response);
